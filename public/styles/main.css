@@ -1,0 +1,230 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f1923;
+}
+
+main {
+  flex: 1; /* takes available space and pushes footer down */
+
+}
+
+
+footer {
+  /* background-color: #0d6efd; */
+   /* Bootstrap primary blue */
+  color: white;
+  width: 100%;
+}
+
+.copyright {
+  color: #ffffff;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  
+}
+
+
+
+/* Make your header transparent and overlayed (doesn't take space) */
+.site-header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: transparent;
+  pointer-events: auto;
+}
+
+/* Remove the visual bottom border and the extra bottom margin from the inner header */
+.site-header .border-bottom{ border-bottom: 0 !important; }
+.site-header .mb-4{ margin-bottom: 0 !important; }
+
+/* Ensure header text/links are readable over the hero image */
+.site-header .text-dark{ color:#fff !important; }
+.site-header .nav-link{ color:#fff !important; }
+.site-header .nav-link.active{ background: rgba(255,255,255,0.15); border-color: transparent; }
+
+/* Hero should fill the full viewport; header is overlay, so no subtraction needed */
+.hero{ width:100%; height:100vh; object-fit:cover; display:block; }
+
+/* Keep the page layout sane */
+html,body{ height:100%; margin:0; }
+
+
+.dark-card {
+  background-color: #1c1f26;
+  color: #ffffff;
+}
+
+footer .nav-link {
+  color: #ffffff;
+}
+
+
+
+.hero-section {
+  position: relative;
+  background-image: url('/images/gaming.jpg'); /* change to your desired image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px; /* adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px; /* optional curved bottom */
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent dark layer for contrast */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-section {
+  margin-bottom: 60px ;  /* adjust spacing as you like */
+  margin-top: 80px ;
+}
+/* Push content below a fixed header (adjust if your header height differs) */
+.article-main {
+  padding-top: 72px;
+}
+
+/* Article section container */
+.article-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Title */
+.article-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Meta (date/time) */
+.article-meta {
+  text-align: center;
+  color: #b7b7b7;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Cover image (same visual as a background cover) */
+.article-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;          /* emulate background-size: cover */
+  object-position: center;    /* emulate background-position: center */
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+/* Optional brief */
+.article-brief {
+  font-size: 1.1rem;
+  line-height: 40px;
+  color: #fff;
+  white-space: pre-wrap;  /* keep user line breaks */
+  opacity: 0.9;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+/* Full body */
+.article-body {
+  font-size: 1.1rem;
+  line-height: 40px;      /* your requested height */
+  color: #fff;
+  white-space: pre-wrap;  /* keep user line breaks */
+  margin-bottom: 0;
+}
+
+/* ===== Carousel Section ===== */
+.carousel-img {
+  height: calc(100vh - 80px); /* make it fill page under header */
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+/* ===== Articles Section ===== */
+.articles-section {
+  background-color: transparent;
+}
+
+.dark-card {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.card-cover-img {
+  height: 225px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article-time {
+  color: #bbb;
+  font-size: 0.85rem;
+}
+
+/* ===== Popular Games Section ===== */
+.popular-games {
+  background-color: transparent;
+}
+
+.popular-card {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.popular-card-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 2rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+.popular-card h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Specific backgrounds for each card */
+.fortnite-card {
+  background-image: url("/images/Fortnite.jpg");
+}
+
+.warzone-card {
+  background-image: url("/images/Warzone.jpg");
+}
+
+.csgo-card {
+  background-image: url("/images/CSGO.jpg");
+}

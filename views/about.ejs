@@ -1,0 +1,54 @@
+<%- include("partials/header") %>
+
+<section class="about-section d-flex align-items-center justify-content-center text-center text-white py-5">
+  <div class="container">
+    <h2 class="display-4 fw-bold mb-4">About Us</h2>
+    <p class="lead mx-auto" style="max-width: 850px;">
+      Welcome to <span class="text-primary">Games Web Blog</span> — your digital hub for everything gaming.  
+      We bring you the latest news, reviews, and deep insights into the world of video games, from 
+      AAA blockbusters to indie gems. Our mission is to connect players and creators by sharing 
+      stories that inspire, inform, and celebrate the passion for gaming.
+    </p>
+    <p class="lead mx-auto mt-4" style="max-width: 850px;">
+      Whether you're a competitive player, a developer, or a casual gamer, this platform is built 
+      for you. Dive into in-depth articles, stay updated on the newest releases, and explore a 
+      community that thrives on creativity, teamwork, and innovation in the gaming world.
+    </p>
+    <a href="/index" class="btn btn-primary mt-4 px-4 py-2">Explore Articles</a>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
+
+
+<style>
+    .about-section {
+  min-height: 90vh;               /* Fill most of the page vertically */
+  background: linear-gradient(180deg, #0a0e14 0%, #11161c 100%);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.about-section h2 {
+  color: #0d6efd;                 /* Accent blue for title */
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.about-section .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.about-section .btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+</style>
